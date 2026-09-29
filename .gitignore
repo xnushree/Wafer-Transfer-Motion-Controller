@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+# ROS 2 build outputs and the generated upload bundle
+ros2/build/
+ros2/install/
+ros2/log/
+ros2/wafer_transfer_robot.zip
+
+# MATLAB / Simulink caches and autosaves
+*.slxc
+slprj/
+*.asv
+*.autosave

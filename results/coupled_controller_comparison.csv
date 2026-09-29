@@ -1,0 +1,19 @@
+plant,controller,axis,rmse,max_error,final_error,peak_effort,saturated
+Decoupled plant,PID,R,5.669782,8.828966,0.655604,2.871520,False
+Decoupled plant,PID,Theta,0.466575,0.682771,0.003288,1.265779,False
+Decoupled plant,PID,Z,2.216959,3.443930,0.095662,1.119085,False
+Decoupled plant,PID + FF,R,0.015994,0.026101,0.007146,2.297236,False
+Decoupled plant,PID + FF,Theta,0.001318,0.002376,0.000015,1.201496,False
+Decoupled plant,PID + FF,Z,0.006253,0.010594,0.002100,0.931938,False
+Decoupled plant,Computed torque,R,5.064397,9.873521,0.215249,2.188061,False
+Decoupled plant,Computed torque,Theta,0.222568,0.356415,0.004865,1.213849,False
+Decoupled plant,Computed torque,Z,0.006306,0.010749,0.002237,0.931948,False
+Coupled plant,PID,R,8.738143,15.447945,0.811257,4.852811,False
+Coupled plant,PID,Theta,0.929253,1.717698,0.062785,3.182814,False
+Coupled plant,PID,Z,2.216959,3.443930,0.095662,1.119085,False
+Coupled plant,PID + FF,R,5.572685,10.766498,0.168217,4.579975,False
+Coupled plant,PID + FF,Theta,0.520957,1.027646,0.041226,2.949558,False
+Coupled plant,PID + FF,Z,0.006253,0.010594,0.002100,0.931938,False
+Coupled plant,Computed torque,R,0.023500,0.040653,0.006600,3.754966,False
+Coupled plant,Computed torque,Theta,0.001378,0.002378,0.000023,2.545840,False
+Coupled plant,Computed torque,Z,0.006306,0.010749,0.002237,0.931948,False

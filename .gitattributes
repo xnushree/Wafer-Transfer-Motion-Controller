@@ -1,0 +1,2 @@
+# Shell scripts run on Linux (ROS 2 machines): always LF line endings
+*.sh text eol=lf
