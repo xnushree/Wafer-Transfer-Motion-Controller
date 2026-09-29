@@ -120,15 +120,13 @@ disturbance at t = 2.5 s: 2 N on R, 0.5 N·m on θ, and on Z the weight of a
 On the R axis:
 
 | | RMSE, nominal plant | RMSE, plant 20% heavier | Disturbance peak | Recovery to 0.1 mm |
-|---|---|---|---|---|
+|---|---:|---:|---:|---:|
 | A | 5.670 mm | 6.971 mm | 8.551 mm | not within the window |
 | B | 0.016 mm | 1.159 mm | 8.304 mm | not within the window |
 | C | 0.003 mm | 0.045 mm | 0.447 mm | 0.39 s |
+| D | 0.003 mm | 0.045 mm | 0.447 mm | 0.39 s |
 
-On the Z axis, B has 24.3 mm RMSE on the heavier plant and a 5.02 mm error
-when the wafer is picked up. Retuning (C) brings these down to 0.689 mm and
-0.363 mm. Adding the payload feedforward (D) reduces the pick-up error to
-0.007 mm.
+On the R axis, D has the same response as C because the additional payload feedforward in D acts only on the Z axis. On the Z axis, B has 24.3 mm RMSE on the heavier plant and a 5.02 mm error when the wafer is picked up. Retuning (C) brings these down to 0.689 mm and 0.363 mm. Adding the payload feedforward (D) reduces the pick-up error to 0.007 mm.
 
 Feedforward removes nearly all of the tracking error when the model is
 correct. It does nothing for a wrong model or an unexpected force; that has
