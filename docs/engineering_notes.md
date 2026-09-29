@@ -5,7 +5,7 @@ the README. As there, every number is a simulation result for this model.
 
 ## 1. Python vs Simulink: what the cross-check found
 
-The Simulink model ([robot_3axis.slx](../matlab/models/robot_3axis.slx)) uses a Discrete PID Controller with a
+The Simulink model uses a Discrete PID Controller with a
 backward-Euler integral and an unfiltered derivative, sampled every 2 ms. The
 plant is continuous and solved with the fixed-step ode4 (RK4) solver, also
 at 2 ms. The script
@@ -37,14 +37,14 @@ too low. With correct timing, feedforward reduces the R RMSE from 5.67 mm to
 0.016 mm (99.7%), in this ideal case where the model is exact. All the
 simulation scripts were then switched to the sampled timing, using
 [CylindricalRobotDynamics.rk4_step](../src/robot_dynamics.py) for the ones that simulate dynamics. The
-old loop is kept in [simulink_validation.py](../simulation/simulink_validation.py) for reference only.
+old loop is kept in [simulink_validation.py](../simulation/simulink_validation.py) for reference. 
 
 ## 2. Choosing move durations from limits
 
 For a rest-to-rest quintic over a distance d in time T:
 
 $$
-v_{peak} = 1.875 \frac{d}{T}, \qquad a_{peak} = 5.7735 \frac{d}{T^2}
+v_{peak} = 1.875 \frac{d}{T}, \qquad a_{peak} = 5.7735 \frac{d}{T^2} 
 $$
 
 [WaferTransferSequence.move_duration](../src/wafer_transfer.py) takes, over all joints, the larger of
@@ -112,7 +112,7 @@ the smoothstep fixed that.
 ## 6. Coupled dynamics and computed torque
 
 Treating the radial stage as a point mass m_r at radius r
-([src/coupled_dynamics.py](../src/coupled_dynamics.py)) gives
+ gives
 
 $$
 M(q) = \mathrm{diag}(m_r,\ J_0 + m_r r^2,\ m_z), \qquad
